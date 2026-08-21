@@ -112,12 +112,13 @@ export default function About() {
         <div className="flex flex-col items-center text-center">
 
   <Image
-    src="/irene-leal2.jpg"
-    alt="Irene Leal"
-    width={235}
-    height={235}
-    className="rounded-2xl shadow-lg mb-6 object-cover w-[220px] h-[220px]"
-  />
+  src="/images/irene-leal3.jpg"
+  alt="Irene Leal"
+  width={235}
+  height={280}
+  className="rounded-2xl shadow-lg mb-6 object-contain"
+ />
+
 
   <h3 className="text-2xl font-bold text-blue-700">
     Irene Leal
@@ -154,12 +155,12 @@ export default function About() {
         <div className="flex flex-col items-center text-center">
 
   <Image
-    src="/esau-leal.jpg"
-    alt="Esau Leal"
-    width={220}
-    height={220}
-    className="rounded-2xl shadow-lg mb-6 object-cover"
-  />
+  src="/images/esau-leal3.jpg"
+  alt="Esau Leal"
+  width={250}
+  height={250}
+  className="rounded-2xl shadow-lg mb-6 object-cover"
+ />
 
   <h3 className="text-2xl font-bold text-blue-700">
     Esau Leal
@@ -191,6 +192,61 @@ export default function About() {
 
     </div>
 
+{/* Our Family. Our Why. */}
+      <div className="mt-10 bg-white rounded-2xl shadow-lg p-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+
+          <div className="flex justify-center">
+  <Image
+    src="/images/family-photo.jpg"
+    alt="The Leal family"
+    width={800}
+    height={600}
+    className="rounded-2xl shadow-lg w-full max-w-[600px] h-auto"
+  />
+</div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">
+              Our Family. Our Why.
+            </h3>
+
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              Guiding Light Autism Family Support was born from our own
+              family's journey.
+            </p>
+
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              We are parents of two children with autism, and we know
+              firsthand how overwhelming it can be when your child receives
+              a diagnosis. We remember searching for answers, trying to
+              figure out what to do next, how to do it, and where to find
+              the resources and benefits our family needed.
+            </p>
+
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              Too often, finding the right information meant going in
+              circles — searching online, making calls, asking questions,
+              and trying to piece everything together on our own. We learned
+              how difficult it can be for families to find clear, reliable
+              information when they need it most.
+            </p>
+
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              Today, we want to use what we've learned to help families who
+              are just beginning this journey. Our goal is to help parents
+              spend less time searching for answers and more time focusing
+              on their children and their families.
+            </p>
+
+            <p className="text-blue-700 font-semibold text-lg leading-relaxed">
+              We created Guiding Light for our children — and for the
+              families walking the same journey.
+            </p>
+          </div>
+
+        </div>
+      </div>
 
     <div className="mt-10 bg-white rounded-2xl shadow-lg p-8 text-center">
 
