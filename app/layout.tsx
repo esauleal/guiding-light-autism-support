@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Guiding Light Autism Family Support",
   description:
     "Helping families navigate autism resources, benefits, and support in English and Spanish.",
+  verification: {
+    google: "EvMJyNVQakUcid4noUs2rEKz3jejZx5yQsN9DfnWUVQ",
+  },
 };
 
 
