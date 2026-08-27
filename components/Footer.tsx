@@ -6,6 +6,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
 
           {/* About */}
+
           <div>
             <h3 className="text-xl font-bold mb-3">
               Guiding Light Autism Family Support
@@ -24,6 +25,7 @@ export default function Footer() {
 
 
           {/* Quick Links */}
+
           <div>
             <h3 className="text-lg font-semibold mb-3">
               Quick Links
@@ -49,6 +51,13 @@ export default function Footer() {
                 </a>
               </li>
 
+              {/* FAQ */}
+              <li>
+                <a href="/faq" className="hover:text-white">
+                  FAQ
+                </a>
+              </li>
+
               <li>
                 <a href="/contact" className="hover:text-white">
                   Contact
@@ -60,6 +69,7 @@ export default function Footer() {
 
 
           {/* Legal */}
+
           <div>
             <h3 className="text-lg font-semibold mb-3">
               Legal
@@ -126,6 +136,7 @@ export default function Footer() {
 
 
           {/* Languages */}
+
           <div>
             <p className="text-blue-100">
               Serving families in English and Spanish.
@@ -140,6 +151,7 @@ export default function Footer() {
 
 
         {/* Copyright */}
+
         <div className="border-t border-blue-400 mt-8 pt-6 text-center text-blue-100">
           © {new Date().getFullYear()} Guiding Light Autism Family Support.
           All rights reserved.
