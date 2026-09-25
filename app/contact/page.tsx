@@ -6,6 +6,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
+import ShareGuidingLight from "@/components/ShareGuidingLight";
 
 export default function Contact() {
   return (
@@ -142,6 +143,9 @@ export default function Contact() {
           <ContactForm />
         </div>
       </section>
+
+      {/* SHARE GUIDING LIGHT */}
+      <ShareGuidingLight />
 
       {/* WRAP-AROUND APPROACH */}
       <section className="bg-sky-50 px-6 py-20">
