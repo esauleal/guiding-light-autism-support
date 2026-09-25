@@ -135,20 +135,42 @@ export default function Footer() {
           </div>
 
 
-          {/* Languages */}
+          {/* Languages & Social */}
 
-          <div>
-            <p className="text-blue-100">
-              Serving families in English and Spanish.
-            </p>
+<div>
+  <p className="text-blue-100">
+    Serving families in English and Spanish.
+  </p>
 
-            <p className="text-blue-100 mt-2">
-              Apoyando a familias en inglés y español.
-            </p>
-          </div>
+  <p className="text-blue-100 mt-2">
+    Apoyando a familias en inglés y español.
+  </p>
 
-        </div>
+  <div className="mt-6">
+    <p className="mb-3 font-semibold text-white">
+      Follow Guiding Light
+    </p>
 
+    <a
+      href="https://www.facebook.com/profile.php?id=61594095654812"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow Guiding Light Autism Family Support on Facebook"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-blue-700 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <svg
+  viewBox="0 0 24 24"
+  className="h-6 w-6 fill-current"
+  aria-hidden="true"
+>
+  <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.49 0-1.956.931-1.956 1.887v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+</svg>
+
+    </a>
+  </div>
+</div>
+
+</div>
 
         {/* Copyright */}
 

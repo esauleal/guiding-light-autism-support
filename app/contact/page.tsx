@@ -5,6 +5,7 @@ import {
   HeartHandshake,
   MessageCircle,
 } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
@@ -116,6 +117,29 @@ export default function Contact() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+ {/* CONTACT FORM */}
+      <section className="bg-sky-50 px-6 py-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-700">
+              Send Us a Message
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
+              Have a Question? We're Here to Help.
+             
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+               Send us a message and tell us a little about what you’re looking for. 
+               You don’t have to know exactly where to start — that’s what we’re here for.
+            </p>
+          </div>
+
+          <ContactForm />
         </div>
       </section>
 
