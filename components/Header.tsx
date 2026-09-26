@@ -98,8 +98,7 @@ export default function Header() {
 
   <a
   href="https://guidinglightautismsupport-org.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en"
-  target="_blank"
-  rel="noopener noreferrer"
+  
   className="text-gray-700 hover:text-blue-700 hover:underline"
 >
   Español
