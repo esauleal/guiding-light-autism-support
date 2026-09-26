@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, Languages } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
@@ -84,6 +84,28 @@ export default function Header() {
             </Link>
 
           </nav>
+ <div className="flex items-center gap-2 text-sm font-semibold">
+  <Languages className="h-5 w-5 text-blue-700" />
+
+  <a
+  href="https://guidinglightautismsupport.org"
+  className="text-blue-700 hover:underline"
+>
+  English
+</a>
+
+  <span className="text-gray-400">|</span>
+
+  <a
+  href="https://guidinglightautismsupport-org.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-700 hover:text-blue-700 hover:underline"
+>
+  Español
+</a>
+
+</div>         
 
           <a
             href="https://calendly.com/esauleal1/free-30-minute-consultation"
