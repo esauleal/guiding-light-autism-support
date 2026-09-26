@@ -1,12 +1,34 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, Languages } from "lucide-react";
+import GoogleTranslate from "./GoogleTranslate";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const handleNavigation = (href: string) => {
+  const isSpanish = document.cookie.includes("googtrans=/en/es");
+
+  if (isSpanish) {
+    window.location.href = href;
+  } else {
+    router.push(href);
+  }
+};
+const changeLanguage = (language: "en" | "es") => {
+  const select = document.querySelector(
+    ".goog-te-combo"
+  ) as HTMLSelectElement | null;
+
+  if (select) {
+    select.value = language;
+    select.dispatchEvent(new Event("change"));
+  }
+};
+  
 
   const navLinkClass = (href: string) =>
     `transition-all duration-300 hover:text-blue-700 hover:-translate-y-1 ${
@@ -16,7 +38,8 @@ export default function Header() {
     }`;
 
   return (
-    <header className="bg-white shadow-sm">
+  <header className="bg-white shadow-sm">
+    <GoogleTranslate />
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 px-6 py-4">
 
         {/* Logo */}
@@ -43,66 +66,100 @@ export default function Header() {
 
           <nav className="flex flex-wrap justify-center items-center gap-6 text-gray-700 font-medium">
 
-            <Link href="/" className={navLinkClass("/")}>
-              Home
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/")}
+    className={navLinkClass("/")}
+  >
+    Home
+  </button>
 
-            <Link href="/about" className={navLinkClass("/about")}>
-              About
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/about")}
+    className={navLinkClass("/about")}
+  >
+    About
+  </button>
 
-            <Link href="/services" className={navLinkClass("/services")}>
-              Services
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/services")}
+    className={navLinkClass("/services")}
+  >
+    Services
+  </button>
 
-            <Link href="/resources" className={navLinkClass("/resources")}>
-              Resources
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/resources")}
+    className={navLinkClass("/resources")}
+  >
+    Resources
+  </button>
 
-            {/* FAQ */}
-            <Link href="/faq" className={navLinkClass("/faq")}>
-              FAQ
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/faq")}
+    className={navLinkClass("/faq")}
+  >
+    FAQ
+  </button>
 
-            <Link href="/journey" className={navLinkClass("/journey")}>
-              Journey
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/journey")}
+    className={navLinkClass("/journey")}
+  >
+    Journey
+  </button>
 
-            <Link href="/downloads" className={navLinkClass("/downloads")}>
-              Downloads
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/downloads")}
+    className={navLinkClass("/downloads")}
+  >
+    Downloads
+  </button>
 
-            <Link
-              href="/ask-guiding-light"
-              className={navLinkClass("/ask-guiding-light")}
-            >
-              Ask Guiding Light
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/ask-guiding-light")}
+    className={navLinkClass("/ask-guiding-light")}
+  >
+    Ask Guiding Light
+  </button>
 
-            <Link href="/contact" className={navLinkClass("/contact")}>
-              Contact
-            </Link>
+  <button
+    type="button"
+    onClick={() => handleNavigation("/contact")}
+    className={navLinkClass("/contact")}
+  >
+    Contact
+  </button>
 
-          </nav>
+</nav>
+
  <div className="flex items-center gap-2 text-sm font-semibold">
   <Languages className="h-5 w-5 text-blue-700" />
 
-  <a
-  href="https://guidinglightautismsupport.org"
+  <button
+  type="button"
+  onClick={() => changeLanguage("en")}
   className="text-blue-700 hover:underline"
 >
   English
-</a>
+</button>
 
   <span className="text-gray-400">|</span>
 
-  <a
-  href="https://guidinglightautismsupport-org.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en"
-  
+  <button
+  type="button"
+  onClick={() => changeLanguage("es")}
   className="text-gray-700 hover:text-blue-700 hover:underline"
 >
   Español
-</a>
+</button>
 
 </div>         
 
@@ -119,5 +176,6 @@ export default function Header() {
         </div>
       </div>
     </header>
+
   );
 }
