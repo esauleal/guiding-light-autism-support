@@ -159,7 +159,7 @@ export default function Home() {
                 alt="Sunlight shining through clouds"
                 width={900}
                 height={900}
-                className="w-full h-[500px] object-cover"
+                className="w-full h-auto object-contain md:h-[500px] md:object-cover"
                 priority
               />
 
