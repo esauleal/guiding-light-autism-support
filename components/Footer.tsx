@@ -150,6 +150,8 @@ export default function Footer() {
     <p className="mb-3 font-semibold text-white">
       Follow Guiding Light
     </p>
+    
+<div className="flex items-center gap-3">
 
     <a
       href="https://www.facebook.com/profile.php?id=61594095654812"
@@ -167,11 +169,26 @@ export default function Footer() {
 </svg>
 
     </a>
+    <a
+  href="https://www.instagram.com/guidinglightautismsupport"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Follow Guiding Light Autism Family Support on Instagram"
+  className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-pink-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+>
+  <svg
+    viewBox="0 0 24 24"
+    className="h-6 w-6 fill-current"
+    aria-hidden="true"
+  >
+    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm.5 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+  </svg>
+</a>
   </div>
 </div>
 
 </div>
-
+</div>
         {/* Copyright */}
 
         <div className="border-t border-blue-400 mt-8 pt-6 text-center text-blue-100">
