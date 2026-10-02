@@ -1,14 +1,15 @@
 "use client";
-
+import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarDays, Languages } from "lucide-react";
+import { CalendarDays, Languages, ChevronDown } from "lucide-react";
 import GoogleTranslate from "./GoogleTranslate";
 
 export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
+  const [moreOpen, setMoreOpen] = useState(false);
   const handleNavigation = (href: string) => {
   const isSpanish = document.cookie.includes("googtrans=/en/es");
 
@@ -40,7 +41,7 @@ const changeLanguage = (language: "en" | "es") => {
   return (
   <header className="bg-white shadow-sm">
     <GoogleTranslate />
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 px-6 py-4">
+      <div className="max-w-[1500px] mx-auto px-4 lg:px-6 flex flex-col xl:flex-row items-center justify-between gap-4">
 
         {/* Logo */}
 
@@ -62,9 +63,9 @@ const changeLanguage = (language: "en" | "es") => {
 
         {/* Navigation */}
 
-        <div className="flex flex-col lg:flex-row items-center gap-5">
+        <div className="flex flex-col lg:flex-row items-center gap-4">
 
-          <nav className="flex flex-wrap justify-center items-center gap-6 text-gray-700 font-medium">
+          <nav className="flex flex-nowrap justify-center items-center gap-5 text-gray-700 font-medium whitespace-nowrap">
 
   <button
     type="button"
@@ -98,45 +99,44 @@ const changeLanguage = (language: "en" | "es") => {
     Resources
   </button>
 
+  <div className="relative">
   <button
     type="button"
-    onClick={() => handleNavigation("/faq")}
-    className={navLinkClass("/faq")}
+    onClick={() => setMoreOpen(!moreOpen)}
+    className="flex items-center gap-1 text-gray-700 transition-all duration-300 hover:text-blue-700"
   >
-    FAQ
+    More
+    <ChevronDown
+      className={`h-4 w-4 transition-transform ${
+        moreOpen ? "rotate-180" : ""
+      }`}
+    />
   </button>
 
-  <button
-    type="button"
-    onClick={() => handleNavigation("/journey")}
-    className={navLinkClass("/journey")}
-  >
-    Journey
-  </button>
-
-  <button
-    type="button"
-    onClick={() => handleNavigation("/downloads")}
-    className={navLinkClass("/downloads")}
-  >
-    Downloads
-  </button>
-
-  <button
-    type="button"
-    onClick={() => handleNavigation("/ask-guiding-light")}
-    className={navLinkClass("/ask-guiding-light")}
-  >
-    Ask Guiding Light
-  </button>
-
-  <button
-    type="button"
-    onClick={() => handleNavigation("/contact")}
-    className={navLinkClass("/contact")}
-  >
-    Contact
-  </button>
+  {moreOpen && (
+    <div className="absolute left-0 top-full z-50 mt-3 w-48 rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
+      {[
+        ["FAQ", "/faq"],
+        ["Journey", "/journey"],
+        ["Downloads", "/downloads"],
+        ["Ask Guiding Light", "/ask-guiding-light"],
+        ["Contact", "/contact"],
+      ].map(([label, href]) => (
+        <button
+          key={href}
+          type="button"
+          onClick={() => {
+            setMoreOpen(false);
+            handleNavigation(href);
+          }}
+          className="block w-full rounded-lg px-4 py-2 text-left text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  )}
+</div>
 
 </nav>
 
@@ -162,7 +162,12 @@ const changeLanguage = (language: "en" | "es") => {
 </button>
 
 </div>         
-
+<a
+  href="/get-started"
+  className="inline-flex items-center whitespace-nowrap rounded-xl border border-blue-700 px-5 py-3 font-semibold text-blue-700 transition hover:bg-blue-50"
+>
+  Build My Profile
+</a>
           <a
             href="https://calendly.com/esauleal1/free-30-minute-consultation"
             target="_blank"
