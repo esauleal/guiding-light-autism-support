@@ -48,11 +48,11 @@ const changeLanguage = (language: "en" | "es") => {
         <div className="flex items-center gap-4">
           <Link href="/">
             <Image
-              src="/AutismFamilySupport_Logo1.png"
+              src="/GLAFS-BusinessLogo.jpg"
               alt="Guiding Light Autism Family Support Logo"
               width={95}
               height={95}
-              className="cursor-pointer"
+              className="rounded-full object-cover"
             />
           </Link>
 
