@@ -368,101 +368,61 @@ export default function Resources() {
 
 
 
-      {/* FEATURED RESOURCES */}
+       {/* PARENT GUIDES & ARTICLES */}
 
       <section className="bg-sky-50 py-20 px-6">
 
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-3xl font-bold text-blue-700 text-center mb-12">
+          <div className="text-center mb-12">
 
-            Featured Family Guides
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+              Parent Guides & Articles
+            </h2>
 
-          </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-8">
+              Practical guidance shaped by lived experience. Explore articles
+              created to help families better understand the challenges,
+              decisions, and next steps that can come throughout the autism
+              journey.
+            </p>
 
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+            {/* ARTICLE 1 */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <a
+              href="/resources/guides/autism-transition-to-adulthood"
+              className="group bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+            >
 
-              <h3 className="text-xl font-semibold text-blue-700 mb-3">
-
-                Autism Diagnosis: First Steps
-
-              </h3>
-
-              <p className="text-gray-600">
-
-                A helpful starting point for families organizing questions,
-                appointments, and next steps after diagnosis.
-
+              <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3">
+                Transition to Adulthood
               </p>
 
-            </div>
-
-
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-
-              <h3 className="text-xl font-semibold text-blue-700 mb-3">
-
-                Understanding the IEP Process
-
+              <h3 className="text-2xl font-bold text-blue-700 mb-4 group-hover:text-blue-800">
+                Autism Transition to Adulthood: A Parent&apos;s Guide to
+                Preparing for What Comes Next
               </h3>
 
-              <p className="text-gray-600">
-
-                Learn about school support, educational planning, and preparing
-                for conversations with your child's team.
-
+              <p className="text-gray-600 leading-7 mb-6">
+                What we&apos;ve learned about preparing for adult services,
+                benefits, guardianship, and life after the school years.
               </p>
 
-            </div>
+              <span className="font-semibold text-blue-700 group-hover:underline">
+                Read the Article →
+              </span>
 
-
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-
-              <h3 className="text-xl font-semibold text-blue-700 mb-3">
-
-                Finding Support Services
-
-              </h3>
-
-              <p className="text-gray-600">
-
-                Explore resources and programs that may help your family find
-                additional support.
-
-              </p>
-
-            </div>
-
-
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-
-              <h3 className="text-xl font-semibold text-blue-700 mb-3">
-
-                Recursos en Español
-
-              </h3>
-
-              <p className="text-gray-600">
-
-                Bilingual information and guidance for Spanish-speaking families
-                seeking autism resources.
-
-              </p>
-
-            </div>
-
+            </a>
 
           </div>
 
         </div>
 
       </section>
-
-
 
       {/* TRUSTED ORGANIZATIONS */}
 
