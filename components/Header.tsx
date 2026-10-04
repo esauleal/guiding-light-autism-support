@@ -118,7 +118,6 @@ const changeLanguage = (language: "en" | "es") => {
       {[
         ["FAQ", "/faq"],
         ["Journey", "/journey"],
-        ["Downloads", "/downloads"],
         ["Ask Guiding Light", "/ask-guiding-light"],
         ["Contact", "/contact"],
       ].map(([label, href]) => (

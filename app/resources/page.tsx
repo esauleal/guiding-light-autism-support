@@ -4,6 +4,7 @@ import {
   Compass,
   GraduationCap,
   HeartHandshake,
+  Download,
   Languages,
   UsersRound,
   Accessibility,
@@ -359,6 +360,21 @@ export default function Resources() {
 
             </div>
 
+          {/* DOWNLOADS & HELPFUL TOOLS */}
+<div
+  onClick={() => (window.location.href = "/downloads")}
+  className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition cursor-pointer"
+>
+  <Download className="w-10 h-10 text-blue-700 mb-4" />
+
+  <h3 className="text-xl font-semibold mb-3">
+    Downloads & Helpful Tools
+  </h3>
+
+  <p className="text-gray-600">
+    Download practical checklists, worksheets, guides, and other tools created to help families navigate the autism journey.
+  </p>
+</div>
 
           </div>
 
