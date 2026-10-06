@@ -396,14 +396,14 @@ export default function Resources() {
           <div className="text-center mb-12">
 
             <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
-              Parent Guides & Articles
+              Family Insights & Articles
             </h2>
 
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-8">
-              Practical guidance shaped by lived experience. Explore articles
-              created to help families better understand the challenges,
-              decisions, and next steps that can come throughout the autism
-              journey.
+              Personal stories and insights shaped by lived experience.
+              Explore the realities of raising children with autism, family life,
+              faith, relationships, and the lessons we have learned along the way.
+
             </p>
 
           </div>
@@ -412,6 +412,29 @@ export default function Resources() {
 
             {/* ARTICLE 1 */}
 
+            <a
+  href="/resources/guides/redefining-normal"
+  className="group bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition"
+>
+  <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3">
+    Family Life &amp; Autism
+  </p>
+
+  <h3 className="text-2xl font-bold text-blue-700 mb-4 group-hover:text-blue-800">
+    Redefining &ldquo;Normal&rdquo;: What Raising Children With Autism
+    Taught Our Family About Faith, Marriage, and Belonging
+  </h3>
+
+  <p className="text-gray-600 leading-7 mb-6">
+    A personal reflection on family life, public judgment, marriage,
+    faith, and what raising children with autism has taught us about
+    belonging and accepting a different kind of normal.
+  </p>
+
+  <span className="font-semibold text-blue-700 group-hover:underline">
+    Read the Article →
+  </span>
+</a>
 
           </div>
 
