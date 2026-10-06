@@ -2,6 +2,7 @@ import {
   Mail,
   CalendarCheck,
   Languages,
+  Compass,
   HeartHandshake,
   MessageCircle,
 } from "lucide-react";
@@ -52,28 +53,26 @@ export default function Contact() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* EMAIL */}
-            <div className="rounded-2xl border border-blue-100 bg-blue-50 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mb-5 inline-flex rounded-xl bg-white p-4 shadow-sm">
-                <Mail className="h-9 w-9 text-blue-700" />
-              </div>
+            {/* Start My Roadmap */}
+<div className="bg-white rounded-2xl shadow-lg p-8">
+  <Compass className="w-10 h-10 text-blue-700 mb-4" />
 
-              <h2 className="mb-3 text-2xl font-bold text-blue-700">
-                Email Us
-              </h2>
+  <h3 className="text-xl font-semibold mb-3">
+    Start My Roadmap
+  </h3>
 
-              <p className="mb-6 leading-7 text-gray-600">
-                Have a question or want to tell us a little about what your
-                family needs? Send us an email and we'll get back to you.
-              </p>
+  <p className="text-gray-600 mb-6">
+    Not sure where to begin? Tell us what your family is navigating so
+    we can better understand the support you&apos;re looking for.
+  </p>
 
-              <a
-                href="mailto:info@guidinglightautismsupport.org"
-                className="break-words font-semibold text-blue-700 hover:text-blue-900 hover:underline"
-              >
-                info@guidinglightautismsupport.org
-              </a>
-            </div>
+  <a
+    href="/get-started"
+    className="font-semibold text-blue-700 hover:underline"
+  >
+    Start My Roadmap →
+  </a>
+</div>
 
             {/* CONSULTATION */}
             <div className="rounded-2xl border border-blue-100 bg-blue-50 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
@@ -98,31 +97,35 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* LANGUAGES */}
-            <div className="rounded-2xl border border-blue-100 bg-blue-50 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="mb-5 inline-flex rounded-xl bg-white p-4 shadow-sm">
-                <Languages className="h-9 w-9 text-blue-700" />
-              </div>
+            {/* SEND US A MESSAGE */}
+<div className="rounded-2xl border border-blue-100 bg-blue-50 p-8 shadow-lg transition">
+  <div className="mb-5 inline-flex rounded-xl bg-white p-4 shadow-sm">
+    <Mail className="h-9 w-9 text-blue-700" />
+  </div>
 
-              <h2 className="mb-3 text-2xl font-bold text-blue-700">
-                English & Spanish
-              </h2>
+  <h2 className="mb-3 text-2xl font-bold text-blue-700">
+    Send Us a Message
+  </h2>
 
-              <p className="leading-7 text-gray-600">
-                Services are available in both{" "}
-                <strong className="text-gray-800">
-                  English and Spanish
-                </strong>
-                , helping more families access guidance, resources, and
-                support.
-              </p>
-            </div>
+  <p className="mb-6 leading-7 text-gray-600">
+    Have a general question? Send us a message and we&apos;ll get back
+    to you as soon as we can.
+  </p>
+
+  <a
+    href="#contact-form"
+    className="font-semibold text-blue-700 hover:text-blue-900 hover:underline"
+  >
+    Send a Message →
+  </a>
+</div>
           </div>
         </div>
       </section>
 
  {/* CONTACT FORM */}
-      <section className="bg-sky-50 px-6 py-20">
+      <section id="contact-form" className="bg-sky-50 px-6 py-20">
+
         <div className="mx-auto max-w-4xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-700">
