@@ -488,7 +488,7 @@ return true;
 }
   className="rounded-xl bg-sky-700 px-6 py-4 font-bold text-white shadow-sm transition hover:bg-sky-800 disabled:cursor-not-allowed disabled:bg-slate-300 sm:min-w-40"
 >
-  {isSubmitting ? "Building Your Profile..." : "Build My Profile"}
+  {isSubmitting ? "Building Your Roadmap..." : "Submit My Roadmap"}
 </button>
 
     </div>
@@ -514,25 +514,25 @@ return true;
     </div>
 
     <p className="mt-5 text-sm font-semibold uppercase tracking-widest text-sky-700">
-      Profile Complete
+      ROADMAP STARTED
     </p>
 
     <h2 className="mx-auto mt-3 max-w-2xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-      Your Custom Family Support Profile is Ready!
+      We Have a Better Understanding of Your Family&apos;s Needs
     </h2>
 
     <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600">
-      We have securely logged your details. Because autism resources vary
-      heavily by age and state guidelines, we have mapped out a tailored
-      framework for your family. To review your profile, build your actionable
-      roadmap, and unlock your specialized toolkit downloads, secure your
-      comprehensive 1-on-1 strategy consultation below.
+      Thank you for sharing what your family is navigating. We&apos;ve captured
+      your concerns, selected support areas, and the information you provided
+      so we can better prepare for your consultation. The next step is to
+      schedule your one-on-one consultation, where we&apos;ll review your needs
+      together and begin building a personalized roadmap for your family.
     </p>
 
     {/* Price */}
     <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-sky-200 bg-sky-50 px-6 py-5">
       <p className="text-sm font-semibold uppercase tracking-wide text-sky-700">
-        Comprehensive Strategy Session
+        PERSONALIZED FAMILY CONSULTATION
       </p>
 
       <p className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">
@@ -540,7 +540,7 @@ return true;
       </p>
 
       <p className="mt-1 font-semibold text-slate-700">
-        1-Hour Deep Dive Consultation
+        60-Minute One-on-One Consultation
       </p>
     </div>
 
@@ -553,23 +553,29 @@ return true;
       <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
         <li className="flex gap-3">
           <span className="font-bold text-sky-700">✓</span>
-          Review of your family&apos;s support profile
+          Review the concerns and needs you shared
         </li>
 
         <li className="flex gap-3">
           <span className="font-bold text-sky-700">✓</span>
-          Personalized next-step roadmap
+          Talk through your family's highest-priority questions
         </li>
 
         <li className="flex gap-3">
           <span className="font-bold text-sky-700">✓</span>
-          Guidance based on your selected support areas
+          Identify practical next steps based on your situation
         </li>
 
         <li className="flex gap-3">
           <span className="font-bold text-sky-700">✓</span>
-          Access to relevant Guiding Light toolkit downloads
+          Connect you with relevant resources and support options
         </li>
+
+        <li className="flex gap-3">
+          <span className="font-bold text-sky-700">✓</span>
+          Build a personalized family roadmap together
+        </li>
+
       </ul>
     </div>
 
@@ -580,7 +586,7 @@ target="_blank"
 rel="noopener noreferrer"
       className="mt-8 w-full block text-center rounded-xl bg-sky-700 px-6 py-4 text-base font-bold text-white shadow-lg shadow-sky-700/20 transition hover:bg-sky-800 sm:w-auto sm:min-w-80"
     >
-      Book &amp; Unlock Your Custom Roadmap
+      Schedule My Consultation
     </a>
 
     <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-slate-500">

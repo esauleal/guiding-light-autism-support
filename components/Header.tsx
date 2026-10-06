@@ -165,7 +165,7 @@ const changeLanguage = (language: "en" | "es") => {
   href="/get-started"
   className="inline-flex items-center whitespace-nowrap rounded-xl border border-blue-700 px-5 py-3 font-semibold text-blue-700 transition hover:bg-blue-50"
 >
-  Build My Profile
+  Start My Roadmap
 </a>
           <a
             href="https://calendly.com/esauleal1/free-30-minute-consultation"
