@@ -24,6 +24,7 @@ export default function DiagnosisPage() {
           Thousands of families have started exactly where you are today.
           This guide will help you understand your next steps.
         </p>
+
       </section>
 
       {/* First Steps */}
@@ -35,7 +36,7 @@ export default function DiagnosisPage() {
             Your First Steps
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
 
@@ -69,6 +70,27 @@ export default function DiagnosisPage() {
 
             </div>
 
+          <a
+  href="/get-started"
+  className="block bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-2xl transition cursor-pointer border-2 border-blue-200"
+>
+  <div className="text-blue-700 text-4xl mb-4">
+    🧭
+  </div>
+
+  <h3 className="text-2xl font-semibold mb-4 text-blue-700">
+    Start My Roadmap
+  </h3>
+
+  <p className="text-gray-600 mb-4">
+    Build a personalized roadmap based on your family's needs,
+    priorities, and concerns.
+  </p>
+
+  <span className="font-semibold text-blue-700">
+    Get Started →
+  </span>
+</a>
           </div>
 
         </div>
