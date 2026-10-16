@@ -27,10 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://guidinglightautismsupport.org/journey",
-      lastModified: new Date(),
-    },
-    {
       url: "https://guidinglightautismsupport.org/ask-guiding-light",
       lastModified: new Date(),
     },
@@ -38,5 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://guidinglightautismsupport.org/downloads",
       lastModified: new Date(),
     },
+    {
+  url: "https://guidinglightautismsupport.org/resources/adult-autism",
+  lastModified: new Date(),
+},
+{
+  url: "https://guidinglightautismsupport.org/resources/guides/autism-transition-to-adulthood",
+  lastModified: new Date(),
+},
   ];
 }
