@@ -18,6 +18,7 @@ import {
   Compass,
   CheckCircle2,
   Link2,
+  Landmark,
 } from "lucide-react";
 
 export default function Home() {
@@ -160,6 +161,7 @@ export default function Home() {
                 width={900}
                 height={900}
                 className="w-full h-auto object-contain md:h-[500px] md:object-cover"
+
                 priority
               />
 
@@ -322,9 +324,28 @@ export default function Home() {
 
             {/* DOWNLOADS */}
 
-            <Link
+            {/* NATIONAL RESOURCES */}
+<Link
+  href="/journey/national-resources"
+  className="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-xl transition"
+>
+  <Landmark className="w-12 h-12 mx-auto text-blue-700 mb-5" />
+
+  <h3 className="text-2xl font-bold text-blue-700 mb-3">
+    National Resources
+  </h3>
+
+  <p className="text-gray-600">
+    Explore national autism organizations, government programs,
+    and trusted resources to help support your family.
+  </p>
+</Link>
+
+          </div>
+
+        <Link
               href="/downloads"
-              className="bg-blue-700 rounded-2xl shadow-xl p-8 text-center text-white hover:scale-105 transition-all duration-300"
+              className="block w-full mt-10 bg-blue-700 rounded-2xl shadow-xl p-8 text-center text-white hover:scale-105 transition-all duration-300"
             >
 
               <Download className="w-12 h-12 mx-auto mb-5" />
@@ -343,10 +364,8 @@ export default function Home() {
               </p>
 
             </Link>
-
-          </div>
-
-        </div>
+            
+            </div>
 
       </section>
 
