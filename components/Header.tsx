@@ -117,7 +117,6 @@ const changeLanguage = (language: "en" | "es") => {
     <div className="absolute left-0 top-full z-50 mt-3 w-48 rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
       {[
         ["FAQ", "/faq"],
-        ["Journey", "/journey"],
         ["Ask Guiding Light", "/ask-guiding-light"],
         ["Contact", "/contact"],
       ].map(([label, href]) => (
