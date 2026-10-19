@@ -28,7 +28,7 @@ export default function DownloadsPage() {
       title: "Preparing for an ARD / IEP Meeting",
       description:
         "Helpful questions and documents to prepare before your next school meeting.",
-      available: false,
+      available: true,
     },
     {
       icon: Wallet,
@@ -142,7 +142,11 @@ export default function DownloadsPage() {
 
                   {item.available ? (
                     <Link
-                      href="/downloads/guiding-light-family-toolkit-003.pdf"
+                      href={
+                      index === 0
+                       ? "/downloads/guiding-light-family-toolkit-003.pdf"
+                       : "/downloads/GLAFS_Volume%202%20Preparing%20for%20an%20ARD_IEP%20Meeting.pdf"
+                              }
                       download
                       className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-6 py-3 text-white font-semibold shadow-md hover:bg-blue-800 hover:scale-105 transition-all duration-300"
                     >
