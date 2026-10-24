@@ -11,6 +11,14 @@ export const metadata = {
     url: "https://guidinglightautismsupport.org/resources/guides/redefining-normal",
     siteName: "Guiding Light Autism Family Support",
     type: "article",
+    images: [
+  {
+    url: "https://guidinglightautismsupport.org/redefining-normal-banner.png",
+    width: 1200,
+    height: 630,
+    alt: "Redefining Normal — Guiding Light Autism Family Support",
+  },
+],
   },
 };
 
