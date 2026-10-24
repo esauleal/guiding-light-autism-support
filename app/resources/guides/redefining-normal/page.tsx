@@ -1,5 +1,18 @@
 import Link from "next/link";
 import ArticleShareButton from "@/components/ArticleShareButton";
+export const metadata = {
+  title: "Redefining Normal | Guiding Light Autism Family Support",
+  description:
+    "A personal reflection on raising children with autism and what our family has learned about faith, marriage, and belonging.",
+  openGraph: {
+    title: "Redefining Normal: Raising Children with Autism",
+    description:
+      "Discover what raising children with autism taught our family about faith, marriage, and belonging.",
+    url: "https://guidinglightautismsupport.org/resources/guides/redefining-normal",
+    siteName: "Guiding Light Autism Family Support",
+    type: "article",
+  },
+};
 
 export default function RedefiningNormalArticle() {
   return (

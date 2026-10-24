@@ -416,7 +416,15 @@ export default function Resources() {
   href="/resources/guides/redefining-normal"
   className="group bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition"
 >
-  <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3">
+  <div className="mb-5 overflow-hidden rounded-xl">
+  <img
+    src="/redefining-normal-banner.png"
+    alt="Redefining Normal — Guiding Light Autism Family Support article"
+    className="w-full h-auto rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+  />
+</div>
+
+<p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3">
     Family Life &amp; Autism
   </p>
 
