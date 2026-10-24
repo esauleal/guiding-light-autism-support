@@ -6,6 +6,23 @@ export const metadata = {
     "Autism Transition to Adulthood: A Parent's Guide | Guiding Light Autism Family Support",
   description:
     "A parent-to-parent guide to autism transition to adulthood, including adult services, SSI, ABLE accounts, waiver programs, guardianship, and planning ahead.",
+openGraph: {
+  title: "Autism Transition to Adulthood: A Parent's Guide to Preparing for What Comes Next",
+  description:
+    "A parent-to-parent guide to preparing for adult services, benefits, guardianship, and life after the school years.",
+  url: "https://guidinglightautismsupport.org/resources/guides/autism-transition-to-adulthood",
+  siteName: "Guiding Light Autism Family Support",
+  type: "article",
+  images: [
+    {
+      url: "https://guidinglightautismsupport.org/autism-transition-banner.png",
+      width: 1200,
+      height: 630,
+      alt: "Autism Transition to Adulthood — Guiding Light Autism Family Support",
+    },
+  ],
+},
+
 };
 
 export default function AutismTransitionToAdulthood() {
