@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArticleShareButton from "@/components/ArticleShareButton";
 
 export const metadata = {
   title:
@@ -30,6 +31,9 @@ export default function AutismTransitionToAdulthood() {
             Autism Transition to Adulthood: A Parent&apos;s Guide to Preparing
             for What Comes Next
           </h1>
+          <div className="flex justify-center mb-6">
+             <ArticleShareButton title="Autism Transition to Adulthood: A Parent's Guide to Preparing for What Comes Next" />
+          </div>
 
           <p className="text-xl text-gray-600 leading-8 mb-6">
             What we&apos;ve learned about preparing for adult services,

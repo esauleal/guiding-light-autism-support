@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArticleShareButton from "@/components/ArticleShareButton";
 
 export default function RedefiningNormalArticle() {
   return (
@@ -16,6 +17,10 @@ export default function RedefiningNormalArticle() {
             Redefining &ldquo;Normal&rdquo;: What Raising Children With Autism
             Taught Our Family About Faith, Marriage, and Belonging
           </h1>
+          <div className="flex justify-center mb-6">
+              <ArticleShareButton title="Redefining Normal: What Raising Children with Autism Taught Our Family About Faith, Marriage, and Belonging" />
+          </div>
+
 
           <p className="text-xl text-gray-600 leading-8 max-w-3xl mx-auto">
             A personal reflection on the parts of raising children with autism
