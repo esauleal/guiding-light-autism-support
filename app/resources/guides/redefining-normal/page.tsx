@@ -41,6 +41,10 @@ export default function RedefiningNormalArticle() {
           <div className="flex justify-center mb-6">
               <ArticleShareButton title="Redefining Normal: What Raising Children with Autism Taught Our Family About Faith, Marriage, and Belonging" />
           </div>
+                <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-6">
+                    <span>⏱</span>
+                    <span>9 min read</span>
+                      </div>
 
 
           <p className="text-xl text-gray-600 leading-8 max-w-3xl mx-auto">

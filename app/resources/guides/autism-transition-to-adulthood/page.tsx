@@ -52,6 +52,11 @@ export default function AutismTransitionToAdulthood() {
              <ArticleShareButton title="Autism Transition to Adulthood: A Parent's Guide to Preparing for What Comes Next" />
           </div>
 
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-6">
+            <span>⏱</span>
+            <span>3 min read</span>
+              </div>
+
           <p className="text-xl text-gray-600 leading-8 mb-6">
             What we&apos;ve learned about preparing for adult services,
             benefits, guardianship, and life after the school years.

@@ -444,6 +444,11 @@ export default function Resources() {
     faith, and what raising children with autism has taught us about
     belonging and accepting a different kind of normal.
   </p>
+  
+  <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+  <span>⏱</span>
+  <span>9 min read</span>
+</div>
 
   <span className="font-semibold text-blue-700 group-hover:underline">
     Read the Article →
@@ -475,6 +480,11 @@ export default function Resources() {
     What we&apos;ve learned about preparing for adult services, benefits,
     guardianship, and life after the school years.
   </p>
+
+<div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+  <span>⏱</span>
+  <span>3 min read</span>
+</div>
 
   <span className="font-semibold text-blue-700 group-hover:underline">
     Read the Article →
