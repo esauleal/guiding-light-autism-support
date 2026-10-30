@@ -266,11 +266,15 @@ return true;
     </p>
 
     <div className="mt-7 grid gap-3 sm:grid-cols-2">
-      {[
+     {[
   "IEP & School Support",
   "Guardianship & Alternatives",
   "Adult Transition Planning",
   "SSI & Government Benefits",
+  "Parent Coaching",
+  "Financial Planning Guidance",
+  "Behavioral Services",
+  "Other Resources Specific to Your Family's Needs",
 ].map((option) => {
   const isSelected = selectedFocus.includes(option);
 

@@ -129,6 +129,138 @@ export const consultationResources: ConsultationResource[] = [
   states: ["ALL"],
 },
 
+{
+    name: "CDC — Autism Information and Family Resources",
+    description:
+      "CDC information about autism, developmental milestones, and resources that can help families better understand their child's needs. Useful for Guiding Light when preparing parent coaching consultations and identifying educational resources.",
+    url: "https://www.cdc.gov/autism/",
+    focusAreas: ["Parent Coaching"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+   {
+    name: "Parent to Parent USA — Family Support Networks",
+    description:
+      "National network connecting families of individuals with disabilities and special healthcare needs to parent-to-parent support programs. Useful for Guiding Light when researching family support, peer mentoring, and parent coaching resources.",
+    url: "https://www.p2pusa.org/",
+    focusAreas: ["Parent Coaching"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+    {
+    name: "ABLE National Resource Center — Disability Savings",
+    description:
+      "Educational resource about ABLE savings accounts, eligibility requirements, qualified disability expenses, and state ABLE programs. Useful for Guiding Light when researching financial planning options and preparing questions for families about long-term disability-related savings.",
+    url: "https://www.ablenrc.org/",
+    focusAreas: ["Financial Planning Guidance"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+    {
+    name: "Special Needs Alliance — Trusts & Estate Planning",
+    description:
+      "National network of attorneys focused on special needs trusts, estate planning, public benefits, and long-term financial protection for individuals with disabilities. Useful for Guiding Light when researching legal planning resources and identifying qualified professionals for family referrals.",
+    url: "https://www.specialneedsalliance.org/",
+    focusAreas: ["Financial Planning Guidance"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+  {
+    name: "Behavior Analyst Certification Board — Provider Verification",
+    description:
+      "Official organization responsible for certifying behavior analysts. Useful for Guiding Light when researching behavioral service providers, verifying professional credentials, and helping families identify qualified behavioral specialists.",
+    url: "https://www.bacb.com/",
+    focusAreas: ["Behavioral Services"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+  {
+    name: "Association for Behavior Analysis International — Behavioral Research",
+    description:
+      "Professional organization providing information about behavior analysis, research, conferences, and professional development. Useful for Guiding Light when researching evidence-based behavioral approaches, understanding available services, and preparing questions for qualified behavioral professionals.",
+    url: "https://www.abainternational.org/",
+    focusAreas: ["Behavioral Services"],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+  {
+    name: "211 — Community Assistance & Family Resources",
+    description:
+      "National information and referral network connecting individuals and families with local community assistance programs. Useful for Guiding Light when researching transportation, housing, food assistance, utility support, childcare, and other services based on a family's individual needs. Availability varies by location.",
+    url: "https://www.211.org/",
+    focusAreas: [
+      "Other Resources Specific to Your Family's Needs",
+    ],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
+  {
+    name: "The Arc — Disability & Family Support Resources",
+    description:
+      "National organization supporting individuals with intellectual and developmental disabilities and their families. Provides information about advocacy, community services, housing, employment, family support, and local chapters. Useful for Guiding Light when researching individualized services and identifying community resources.",
+    url: "https://thearc.org/",
+    focusAreas: [
+      "Other Resources Specific to Your Family's Needs",
+    ],
+    ageGroups: [
+      "Early Childhood (0-5)",
+      "School Age (6-12)",
+      "Pre-Teen (13-15)",
+      "Transition Age (16-18)",
+      "Adult (19+)",
+    ],
+    states: ["ALL"],
+  },
+
 ];
 
 export function getMatchingResources(
@@ -307,6 +439,101 @@ steps.push({
 
 }
 
+if (focusAreas.includes("Parent Coaching")) {
+    steps.push({
+      title: "Identify Your Family's Coaching Priorities",
+      description:
+        "Identify the daily challenges, caregiving responsibilities, and family concerns where additional guidance would be most helpful. Consider what strategies have already been tried and what goals your family would like to achieve.",
+      focusArea: "Parent Coaching",
+    });
+
+    steps.push({
+      title: "Explore Parent Coaching and Family Support",
+      description:
+        "Explore parent coaching, educational resources, and family support programs that address your family's specific needs. Identify practical strategies and community resources that can help strengthen daily routines and family well-being.",
+      focusArea: "Parent Coaching",
+    });
+
+    steps.push({
+      title: "Create a Personalized Family Support Plan",
+      description:
+        "Work toward a practical plan that identifies your family's priorities, available support systems, and achievable next steps. Consider follow-up guidance and resources as your family's needs evolve.",
+      focusArea: "Parent Coaching",
+    });
+  }
+
+  if (focusAreas.includes("Financial Planning Guidance")) {
+    steps.push({
+      title: "Identify Your Family's Financial Planning Priorities",
+      description:
+        "Review your family's current financial concerns and long-term goals, including caregiving expenses, future housing needs, and financial security for your loved one with autism or another disability.",
+      focusArea: "Financial Planning Guidance",
+    });
+
+    steps.push({
+      title: "Explore Disability-Related Financial Resources",
+      description:
+        "Learn about ABLE accounts, special needs trusts, SSI, Medicaid, and other available financial assistance programs. Identify eligibility requirements and questions about how different financial arrangements may affect government benefits.",
+      focusArea: "Financial Planning Guidance",
+    });
+
+    steps.push({
+      title: "Connect With Qualified Planning Professionals",
+      description:
+        "Identify qualified financial planners, special needs planning attorneys, or benefits specialists who can provide individualized advice. Prepare questions about long-term financial protection, estate planning, and future caregiving arrangements.",
+      focusArea: "Financial Planning Guidance",
+    });
+  }
+
+  if (focusAreas.includes("Behavioral Services")) {
+    steps.push({
+      title: "Identify Behavioral Support Needs",
+      description:
+        "Identify the behaviors, communication challenges, or sensory concerns affecting your family's daily life. Document when challenges occur, possible triggers, and strategies that have already been attempted.",
+      focusArea: "Behavioral Services",
+    });
+
+    steps.push({
+      title: "Explore Behavioral Services and Therapy Options",
+      description:
+        "Research available behavioral support services, including qualified behavioral specialists, ABA providers, and other appropriate therapy programs. Consider the individual's needs, family preferences, provider qualifications, and insurance coverage.",
+      focusArea: "Behavioral Services",
+    });
+
+    steps.push({
+      title: "Develop a Behavioral Support Resource Plan",
+      description:
+        "Identify potential providers, referral requirements, and next steps for obtaining appropriate behavioral support. Prepare questions for qualified professionals about individualized assessments, family involvement, and ongoing services.",
+      focusArea: "Behavioral Services",
+    });
+  }
+
+   if (
+    focusAreas.includes(
+      "Other Resources Specific to Your Family's Needs"
+    )
+  ) {
+    steps.push({
+      title: "Identify Your Family's Unique Support Needs",
+      description:
+        "Describe the specific challenges, services, or resources your family is looking for. Identify your most urgent priorities, existing support systems, and any barriers to accessing assistance.",
+      focusArea: "Other Resources Specific to Your Family's Needs",
+    });
+
+    steps.push({
+      title: "Research Personalized Community Resources",
+      description:
+        "Explore programs and services based on your family's individual circumstances, location, and needs. These may include respite care, childcare, day programs, transportation, housing assistance, support groups, or specialized providers.",
+      focusArea: "Other Resources Specific to Your Family's Needs",
+    });
+
+    steps.push({
+      title: "Create an Individualized Resource Action Plan",
+      description:
+        "Organize relevant resources, contact information, eligibility requirements, and recommended next steps. Prioritize the most helpful options and identify opportunities for additional family guidance or resource navigation.",
+      focusArea: "Other Resources Specific to Your Family's Needs",
+    });
+  }
 
   return steps;
 }
@@ -440,6 +667,120 @@ if (focusAreas.includes("Adult Transition Planning")) {
   );
 }
 
+if (focusAreas.includes("Parent Coaching")) {
+    questions.push(
+      {
+        question:
+          "What are the biggest day-to-day challenges your family is currently experiencing?",
+        focusArea: "Parent Coaching",
+      },
+      {
+        question:
+          "What parenting strategies or support services have you already tried, and how effective have they been?",
+        focusArea: "Parent Coaching",
+      },
+      {
+        question:
+          "Are there specific routines, communication challenges, or caregiving responsibilities where you would like additional guidance?",
+        focusArea: "Parent Coaching",
+      },
+      {
+        question:
+          "What goals would you like to accomplish through parent coaching and family support?",
+        focusArea: "Parent Coaching",
+      }
+    );
+  }
+
+  if (focusAreas.includes("Financial Planning Guidance")) {
+    questions.push(
+      {
+        question:
+          "What are your family's biggest financial concerns regarding your loved one's current and future needs?",
+        focusArea: "Financial Planning Guidance",
+      },
+      {
+        question:
+          "Does your loved one currently receive SSI, Medicaid, or other disability-related financial benefits?",
+        focusArea: "Financial Planning Guidance",
+      },
+      {
+        question:
+          "Has your family explored ABLE accounts, special needs trusts, or other long-term financial planning options?",
+        focusArea: "Financial Planning Guidance",
+      },
+      {
+        question:
+          "Would your family benefit from resources or referrals to qualified financial planners, special needs planning attorneys, or benefits specialists?",
+        focusArea: "Financial Planning Guidance",
+      }
+    );
+  }
+
+  if (focusAreas.includes("Behavioral Services")) {
+    questions.push(
+      {
+        question:
+          "What specific behavioral challenges or concerns is your family currently experiencing?",
+        focusArea: "Behavioral Services",
+      },
+      {
+        question:
+          "When and where do these behaviors typically occur, and have you noticed any patterns or triggers?",
+        focusArea: "Behavioral Services",
+      },
+      {
+        question:
+          "Has your loved one received a behavioral assessment, participated in ABA therapy, or received other behavioral support services?",
+        focusArea: "Behavioral Services",
+      },
+      {
+        question:
+          "What strategies or interventions have already been attempted, and how effective have they been?",
+        focusArea: "Behavioral Services",
+      },
+      {
+        question:
+          "Would your family benefit from assistance locating qualified behavioral specialists, therapy providers, or other appropriate support services?",
+        focusArea: "Behavioral Services",
+      }
+    );
+  }
+
+   if (
+    focusAreas.includes(
+      "Other Resources Specific to Your Family's Needs"
+    )
+  ) {
+    questions.push(
+      {
+        question:
+          "What specific services, programs, or resources is your family currently looking for?",
+        focusArea: "Other Resources Specific to Your Family's Needs",
+      },
+      {
+        question:
+          "What are the biggest challenges preventing your family from accessing the support you need?",
+        focusArea: "Other Resources Specific to Your Family's Needs",
+      },
+      {
+        question:
+          "Have you already contacted any providers, community organizations, or support programs?",
+        focusArea: "Other Resources Specific to Your Family's Needs",
+      },
+      {
+        question:
+          "Are there specific concerns involving respite care, transportation, childcare, housing, or other family support services?",
+        focusArea: "Other Resources Specific to Your Family's Needs",
+      },
+      {
+        question:
+          "What would be the most helpful outcome for your family from this consultation?",
+        focusArea: "Other Resources Specific to Your Family's Needs",
+      }
+    );
+  }
+
   return questions;
 }
 export function getConsultationChecklist(focusAreas: string[]): string[] {
@@ -492,6 +833,53 @@ if (focusAreas.includes("SSI & Government Benefits")) {
         "Prepare the family's highest-priority questions about eligibility, applications, documentation, or next steps."
     );
 }
+
+ if (focusAreas.includes("Parent Coaching")) {
+    checklist.push(
+      "Identify the biggest day-to-day challenges your family would like help addressing.",
+      "Write down parenting strategies, routines, or support approaches you have already tried.",
+      "Consider which family members or caregivers would benefit from additional guidance.",
+      "List any communication, caregiving, or family support concerns you would like to discuss.",
+      "Prepare two or three goals you would like to accomplish through parent coaching."
+    );
+  }
+
+  if (focusAreas.includes("Financial Planning Guidance")) {
+    checklist.push(
+      "Identify your family's immediate financial concerns and long-term planning goals.",
+      "List any disability-related benefits your loved one currently receives, such as SSI or Medicaid.",
+      "Note whether your family has established an ABLE account, special needs trust, or other financial planning arrangements.",
+      "Prepare a general overview of anticipated caregiving, housing, education, or support expenses.",
+      "Write down questions about financial assistance programs, benefit eligibility, and available planning resources.",
+      "Identify whether your family would benefit from referrals to qualified financial planners, attorneys, or benefits specialists."
+    );
+  }
+
+  if (focusAreas.includes("Behavioral Services")) {
+    checklist.push(
+      "Identify the specific behavioral challenges or concerns your family would like assistance addressing.",
+      "Write down when and where these behaviors typically occur, including any patterns or possible triggers.",
+      "List any behavioral strategies, interventions, or support approaches your family has already tried.",
+      "Gather any existing behavioral assessments, therapy recommendations, or support plans you are comfortable discussing.",
+      "Identify current behavioral therapy providers or services and any concerns about their effectiveness or availability.",
+      "Prepare questions about behavioral assessments, therapy options, insurance coverage, and qualified service providers."
+    );
+  }
+
+   if (
+    focusAreas.includes(
+      "Other Resources Specific to Your Family's Needs"
+    )
+  ) {
+    checklist.push(
+      "Identify the specific services, programs, or resources your family is currently seeking.",
+      "Write down your family's most urgent needs and the challenges you would like help addressing.",
+      "List any providers, community organizations, or support programs you have already contacted.",
+      "Identify barriers such as cost, transportation, eligibility, accessibility, or service availability.",
+      "Prepare questions about local resources, respite care, childcare, day programs, housing, or other specialized support services.",
+      "Consider what a successful outcome from your consultation would look like for your family."
+    );
+  }
 
     return checklist;
 }
