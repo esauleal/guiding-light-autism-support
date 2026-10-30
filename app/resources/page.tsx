@@ -205,7 +205,9 @@ export default function Resources() {
 
             {/* NEW AUTISM DIAGNOSIS */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a
+  href="/journey/diagnosis"
+   className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
               <Compass className="w-10 h-10 text-blue-700 mb-4" />
 
@@ -222,12 +224,13 @@ export default function Resources() {
 
               </p>
 
-            </div>
+            </a>
 
 
             {/* BENEFITS */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a href="/journey/benefits" 
+            className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
               <HeartHandshake className="w-10 h-10 text-blue-700 mb-4" />
 
@@ -245,12 +248,13 @@ export default function Resources() {
 
               </p>
 
-            </div>
+            </a>
 
 
             {/* EDUCATION */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a href="/journey/education"
+             className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
               <GraduationCap className="w-10 h-10 text-blue-700 mb-4" />
 
@@ -267,12 +271,13 @@ export default function Resources() {
 
               </p>
 
-            </div>
+            </a>
 
 
             {/* FAMILY SUPPORT */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a href="/journey/parent-support"
+ className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
               <UsersRound className="w-10 h-10 text-blue-700 mb-4" />
 
@@ -290,12 +295,12 @@ export default function Resources() {
 
               </p>
 
-            </div>
+            </a>
 
 
             {/* ADULT AUTISM */}
 
-            <div
+            <a href="/journey/adult-transition"
   className="block bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition cursor-pointer"
 >
 
@@ -316,11 +321,12 @@ export default function Resources() {
 
               </p>
 
-          </div>
+            </a>
 
             {/* NATIONAL RESOURCES */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a href="/journey/national-resources"
+ className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
               <Landmark className="w-10 h-10 text-blue-700 mb-4" />
 
@@ -338,7 +344,7 @@ export default function Resources() {
 
               </p>
 
-            </div>
+            </a>
 
 
             {/* ESPAÑOL */}
@@ -355,8 +361,9 @@ export default function Resources() {
 
               <p className="text-gray-600">
 
-                Access bilingual support and resources for Spanish-speaking
-                families.
+                Guiding Light supports Spanish-speaking families. Select Español at the 
+                top of our website to explore available guidance, tools,
+                and resources in Spanish.
 
               </p>
 
