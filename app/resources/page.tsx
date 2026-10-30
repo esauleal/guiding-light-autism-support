@@ -295,8 +295,7 @@ export default function Resources() {
 
             {/* ADULT AUTISM */}
 
-            <a
-  href="/resources/adult-autism"
+            <div
   className="block bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition cursor-pointer"
 >
 
@@ -317,7 +316,7 @@ export default function Resources() {
 
               </p>
 
-          </a>
+          </div>
 
             {/* NATIONAL RESOURCES */}
 
@@ -437,6 +436,37 @@ export default function Resources() {
     A personal reflection on family life, public judgment, marriage,
     faith, and what raising children with autism has taught us about
     belonging and accepting a different kind of normal.
+  </p>
+
+  <span className="font-semibold text-blue-700 group-hover:underline">
+    Read the Article →
+  </span>
+</a>
+
+{/* ARTICLE 2 */}
+<a
+  href="/resources/guides/autism-transition-to-adulthood"
+  className="group bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+>
+  <div className="mb-5 overflow-hidden rounded-xl">
+    <img
+      src="/autism-transition-banner.png"
+      alt="Autism Transition to Adulthood — Guiding Light Autism Family Support article"
+      className="w-full h-auto rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+    />
+  </div>
+
+  <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3">
+    Transition to Adulthood
+  </p>
+
+  <h3 className="text-2xl font-bold text-blue-700 mb-4 group-hover:text-blue-800">
+    Autism Transition to Adulthood: A Parent&apos;s Guide to Preparing for What Comes Next
+  </h3>
+
+  <p className="text-gray-600 leading-7 mb-6">
+    What we&apos;ve learned about preparing for adult services, benefits,
+    guardianship, and life after the school years.
   </p>
 
   <span className="font-semibold text-blue-700 group-hover:underline">
