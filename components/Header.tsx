@@ -25,9 +25,10 @@ const changeLanguage = (language: "en" | "es") => {
   ) as HTMLSelectElement | null;
 
   if (select) {
-    select.value = language;
-    select.dispatchEvent(new Event("change"));
-  }
+  select.value = language;
+  select.dispatchEvent(new Event("change", { bubbles: true }));
+}
+
 };
   
 

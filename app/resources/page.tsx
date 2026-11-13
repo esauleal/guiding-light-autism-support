@@ -202,7 +202,6 @@ export default function Resources() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-
             {/* NEW AUTISM DIAGNOSIS */}
 
             <a
@@ -384,6 +383,41 @@ export default function Resources() {
     Download practical checklists, worksheets, guides, and other tools created to help families navigate the autism journey.
   </p>
 </div>
+
+{/* RECOMMENDED AUTISM PRODUCTS */}
+<a
+  href="/resources/recommended-products"
+  className="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all"
+>
+  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="m7 10 5 5 5-5" />
+      <path d="M3 4h18l-2 6H5L3 4Z" />
+      <path d="M5 10v10h14V10" />
+    </svg>
+  </div>
+
+  <h3 className="text-xl font-semibold mb-3">
+    Recommended Autism Products
+  </h3>
+
+  <p className="text-gray-600">
+    Explore sensory tools, communication aids, home safety
+    products, daily living resources, and educational materials
+    selected to help families discover helpful options.
+  </p>
+</a>
 
           </div>
 
