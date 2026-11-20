@@ -14,8 +14,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Sensory & Comfort",
     description:
       "A weighted lap pad may provide comforting pressure for individuals who enjoy deep-pressure sensory input. Choose an appropriate size and weight based on individual preferences and safety needs.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/weighted-lap-pad.png",
+    amazonUrl: "https://link.amazon/B06ZWvDLd",
   },
   {
     id: "sensory-002",
@@ -23,8 +23,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Sensory & Comfort",
     description:
       "Hearing protection earmuffs may help reduce exposure to loud environmental sounds during activities such as travel, community outings, or crowded events. Comfort, fit, and noise-reduction ratings should be considered when selecting a product.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/noise-reducing-earmuffs.png",
+    amazonUrl: "https://link.amazon/B00MQ6ZFj",
   },
   {
     id: "sensory-003",
@@ -32,8 +32,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Sensory & Comfort",
     description:
       "A collection of tactile fidget toys offering different textures, shapes, and movement options. These products may provide enjoyable sensory experiences for individuals who prefer hands-on activities. Select age-appropriate items and consider choking hazards, durability, and supervision needs.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/sensory-fidget-toy-set.png",
+    amazonUrl: "https://link.amazon/B0dtpPr8B",
   },
   {
     id: "communication-001",
@@ -41,8 +41,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Communication & Learning",
     description:
       "A picture-based communication board that allows individuals to express needs, preferences, and everyday choices using visual symbols. These tools may support communication at home, school, or in the community. Choose a format that matches the individual's communication needs and abilities.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/aac-picture-communication-board.png",
+    amazonUrl: "https://link.amazon/B0h15swGi",
   },
   // COMMUNICATION & LEARNING
   {
@@ -51,8 +51,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Communication & Learning",
     description:
       "A visual schedule board that uses pictures or symbols to represent daily activities and routines. May help individuals understand upcoming activities, transitions, and everyday expectations.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/visual-schedule-board.png",
+    amazonUrl: "https://link.amazon/B07vFcutn",
   },
   {
     id: "communication-003",
@@ -60,8 +60,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Communication & Learning",
     description:
       "A visual countdown timer that shows the passage of time without requiring someone to read a traditional clock. May be useful for daily routines, activity transitions, and learning environments.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/visual-timer.png",
+    amazonUrl: "https://link.amazon/B038HwlHA",
   },
 
   // HOME & SAFETY
@@ -71,8 +71,8 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Home & Safety",
     description:
       "A door or window alarm that provides an audible alert when an entry point opens. May offer an additional layer of awareness for caregivers. These devices are not substitutes for supervision or a comprehensive home safety plan.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/door-window-alarm.png",
+    amazonUrl: "https://link.amazon/B08KK0BEV",
   },
   {
     id: "safety-002",
@@ -80,75 +80,75 @@ const recommendedProducts: RecommendedProduct[] = [
     category: "Home & Safety",
     description:
       "Cabinet safety locks designed to help restrict access to selected household storage areas. Consider the individual's abilities, installation requirements, and emergency accessibility when selecting locks.",
-    imageUrl: "",
-    amazonUrl: "",
+    imageUrl: "/product-images/child-safety-cabinet-locks.png",
+    amazonUrl: "https://link.amazon/B0j66JenP",
   },
   {
     id: "safety-003",
-    name: "Personal GPS Location Tracker",
+    name: "AngelSense Personal GPS Watch",
     category: "Home & Safety",
     description:
-      "A wearable or portable location-tracking device that may help caregivers locate a family member when needed. Compare battery life, coverage, subscription costs, privacy features, and reliability. Tracking devices do not replace appropriate supervision.",
-    imageUrl: "",
-    amazonUrl: "",
+      "A wearable GPS tracking watch designed to help caregivers monitor the location of loved ones who may wander. Features include real-time location tracking, two-way voice communication, and safety alerts. A monthly subscription is required. GPS tracking is an additional safety tool and does not replace caregiver supervision.",
+    imageUrl: "/product-images/angelsense-gps-watch.png",
+    amazonUrl: "https://link.amazon/B01iU4gYN",
   },
 
   // DAILY LIVING & INDEPENDENCE
   {
     id: "daily-001",
-    name: "Visual Daily Routine Chart",
+    name: "Now Next Later Visual Schedule Board",
     category: "Daily Living & Independence",
     description:
-      "A reusable visual routine chart that displays everyday activities such as getting dressed, brushing teeth, and preparing for bedtime. May support individuals who benefit from predictable routines and visual reminders.",
-    imageUrl: "",
-    amazonUrl: "",
+      "A visual schedule board designed to help individuals understand daily activities and transitions using Now, Next, and Later picture cards. It may support communication, predictability, and independence by making upcoming activities easier to understand. Includes visual communication cards that can be adapted to individual routines and needs.",
+    imageUrl: "/product-images/now-next-later-visual-board.png",
+    amazonUrl: "https://link.amazon/B0edoZXO8",
   },
   {
     id: "daily-002",
-    name: "Adaptive Eating Utensils",
+    name: "Adaptive Eating Utensil Set",
     category: "Daily Living & Independence",
     description:
-      "Eating utensils with modified handles or grips designed for individuals who benefit from additional support during meals. Choose products based on individual comfort, coordination, and accessibility needs.",
-    imageUrl: "",
-    amazonUrl: "",
+      "A four-piece adaptive eating utensil set featuring stainless steel utensils with thick, textured, easy-grip handles. Designed for individuals who may have difficulty gripping standard utensils, these tools may help improve comfort, control, and independence during mealtimes. Suitable for individuals with varying motor coordination and grip-strength needs.",
+    imageUrl: "/product-images/adaptive-eating-utensils.png",
+    amazonUrl: "https://link.amazon/B01RhbInj",
   },
   {
     id: "daily-003",
-    name: "Easy-Grip Adaptive Dressing Aids",
+    name: "Adaptive Button Hook and Zipper Pull Set",
     category: "Daily Living & Independence",
     description:
-      "Practical dressing tools, such as zipper pulls or button hooks, designed to make certain clothing tasks easier to manage. Product suitability depends on individual abilities and preferences.",
-    imageUrl: "",
-    amazonUrl: "",
+      "This two-piece adaptive dressing aid set features easy-grip, textured handles with button hooks and zipper pulls. Designed to help individuals who experience difficulty with fine motor movements, hand coordination, or gripping small objects. These tools may make buttoning clothing and operating zippers easier, supporting greater independence with daily dressing routines.",
+    imageUrl: "/product-images/adaptive-button-hook-zipper-pull.png",
+    amazonUrl: "https://link.amazon/B0dQZLyWR",
   },
 
   // EDUCATIONAL RESOURCES & BOOKS
   {
     id: "education-001",
-    name: "Autism Parenting Resource Book",
+    name: "An Early Start for Your Child with Autism",
     category: "Educational Resources & Books",
     description:
-      "An educational book offering information and practical perspectives on autism, family support, communication, and everyday experiences. Review the author's qualifications, publication date, and approach before selecting a specific title.",
-    imageUrl: "",
-    amazonUrl: "",
+      "Written by Sally J. Rogers, Geraldine Dawson, and Laurie A. Vismara, this practical parenting resource offers everyday activities to help young children with autism develop communication, social interaction, and learning skills. The book provides parents and caregivers with strategies they can incorporate into daily routines to encourage connection, engagement, and early development.",
+    imageUrl: "/product-images/autism-parenting-resource-book.png",
+    amazonUrl: "https://link.amazon/B06U3E2k2",
   },
   {
     id: "education-002",
-    name: "Social Skills Activity Workbook",
+    name: "The Reason I Jump",
     category: "Educational Resources & Books",
     description:
-      "An activity-based workbook featuring exercises related to communication, social understanding, and everyday interactions. Choose materials that are respectful, age-appropriate, and suited to the individual's interests and learning preferences.",
-    imageUrl: "",
-    amazonUrl: "",
+      "Written by Naoki Higashida, The Reason I Jump offers a personal perspective on the experiences of a young autistic person. Through questions and reflections, the book explores communication, sensory experiences, emotions, and everyday challenges. This resource may help parents, caregivers, and educators develop a deeper understanding of autism and appreciate different ways individuals experience and interact with the world.",
+    imageUrl: "/product-images/the-reason-i-jump-book.png",
+    amazonUrl: "https://link.amazon/B0fNZGjuf",
   },
   {
     id: "education-003",
-    name: "Sensory Activities and Learning Book",
+    name: "The Out-of-Sync Child Has Fun",
     category: "Educational Resources & Books",
     description:
-      "A resource book featuring sensory-friendly activities, creative learning ideas, and hands-on projects for families and caregivers. Activities should be selected according to individual preferences, developmental needs, and safety considerations.",
-    imageUrl: "",
-    amazonUrl: "",
+      "Written by Carol Stock Kranowitz, this sensory activity book offers games and hands-on activities for children with sensory processing differences. It provides parents, caregivers, and educators with practical ideas for exploring movement, touch, coordination, and sensory play. Activities can be adapted to each child's individual abilities, preferences, and comfort level.",
+    imageUrl: "/product-images/sensory-activities-learning-book.png",
+    amazonUrl: "https://link.amazon/B0fAVJ7LD",
   },
 
 ];
@@ -295,12 +295,13 @@ export default function RecommendedProductsPage() {
   </div>
 <div className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-5 text-center">
   <p className="text-sm leading-6 text-gray-700">
-    <strong>Product Recommendation Notice:</strong> Guiding Light
-Autism Family Support shares product recommendations to help
-families explore tools and resources that may support their
-individual needs. Product recommendations are provided for
-informational purposes and do not replace professional guidance.
-  </p>
+  <strong>Affiliate Disclosure:</strong> As an Amazon Associate
+  I earn from qualifying purchases. Guiding Light Autism Family
+  Support may earn a commission when you purchase through our
+  Amazon affiliate links, at no additional cost to you.
+  Product recommendations are provided for informational
+  purposes and do not replace professional guidance.
+</p>
 </div>
 
 </section>
