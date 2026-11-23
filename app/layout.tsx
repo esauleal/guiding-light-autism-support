@@ -21,7 +21,20 @@ export const metadata: Metadata = {
     "Helping families navigate autism resources, benefits, and support in English and Spanish.",
   verification: {
     google: "EvMJyNVQakUcid4noUs2rEKz3jejZx5yQsN9DfnWUVQ",
-  },
+  },openGraph: {
+  title: "Guiding Light Autism Family Support",
+  description:
+    "Helping families navigate autism resources, benefits, and support in English and Spanish.",
+  url: "https://www.guidinglightautismsupport.org",
+  siteName: "Guiding Light Autism Family Support",
+  images: [
+    {
+      url: "/og-image.png",
+      alt: "Guiding Light Autism Family Support Logo",
+    },
+  ],
+  type: "website",
+},
 };
 
 
