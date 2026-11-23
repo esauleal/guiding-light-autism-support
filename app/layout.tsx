@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   siteName: "Guiding Light Autism Family Support",
   images: [
     {
-      url: "/og-image.png?v=2",
+      url: "/og-image.png?v=3",
       alt: "Guiding Light Autism Family Support Logo",
     },
   ],
